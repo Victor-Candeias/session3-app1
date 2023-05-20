@@ -28,7 +28,6 @@ function App() {
   const [expenses, setExpenseList] = useState(DYMMY_EXPENSES);
 
   const addExpenseHandler = (expenseData) => {
-    console.log(expenseData);
     setExpenseList((prevState) => {
       return [expenseData, ...prevState];
     });
